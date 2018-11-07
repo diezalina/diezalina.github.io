@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=devide-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-entity geometry="primitive:box; width: 3"
+            material="color: blue"
+            position="0 2 0"></a-entity>
+            <a-box color="#EF2D5E"
+            width="1"
+            height="1"
+            depth="1"
+            position="0 3 0">
+            <a-circle color="#000000"
+                      radius="0.11"
+                      side="double"
+                      position="0.19 0 0.58"></a-circle>
+            <a-circle color="#000000"
+                      radius="0.11"
+                      side="double"
+                      position="-0.19 0 0.58"></a-circle>
+            </a-box>
+            <a-plane color="#EF3D5E"
+            height="2"
+            width="10"
+            side="double"
+            rotation="90 0 0"
+            position="0 -2 0">
+            </a-plane>
+            <a-sky color="#ECECEC"></a-sky>
+        </a-scene>
+    </body>
+</html>
